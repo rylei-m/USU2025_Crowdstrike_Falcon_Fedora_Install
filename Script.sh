@@ -444,6 +444,11 @@ os_install_package() {
                 DEBIAN_FRONTEND=noninteractive apt-get -qq install -y "$pkg" >/dev/null
             fi
             ;;
+        Fedora)
+            # Written For and Tested Only on Fedora42
+            echo "*RHEL*"
+            rpm_install_package "$pkg"
+            ;;
         *)
             die "Unrecognized OS: ${os_name}"
             ;;
