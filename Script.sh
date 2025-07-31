@@ -429,7 +429,7 @@ os_install_package() {
     }
     # shellcheck disable=SC2221,SC2222
     case "${os_name}" in
-        Amazon | CentOS* | Oracle | RHEL | Rocky | AlmaLinux | SLES)
+        Amazon | CentOS* | Oracle | RHEL | Rocky | AlmaLinux | SLES | Fedora)
             rpm_install_package "$pkg"
             ;;
         Debian)
