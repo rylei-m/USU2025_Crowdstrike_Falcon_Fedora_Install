@@ -447,7 +447,7 @@ os_install_package() {
         Fedora)
             # Written For and Tested Only on Fedora42
             echo "*RHEL*"
-            rpm_install_package "$pkg"
+            # rpm_install_package "$pkg"
             ;;
         *)
             die "Unrecognized OS: ${os_name}"
